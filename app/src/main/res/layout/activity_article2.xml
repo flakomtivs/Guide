@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Articles.Article_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/backgroundrela">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:text="@string/Title_2"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/person"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Olivia Emma"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31m ago"
+                android:textSize="10dp"
+                android:textColor="#787878"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/heart"
+                android:layout_marginLeft="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="1150"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="3dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#50979797">
+        </View>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Article_2"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:background="@drawable/backgroundrela" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="330dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/Title_1"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/Title_2"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/Title_3"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/Title_4"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape"
+                    android:text="Title_5"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape"
+                    android:text="Title_6"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
